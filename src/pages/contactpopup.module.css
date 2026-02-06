@@ -1,0 +1,279 @@
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.4s ease;
+  z-index: 9999;
+}
+
+/* Popup Container */
+.container {
+  width: 90%;
+  max-width: 1150px;
+  height: 90%;
+  background: #ffffff;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: popupZoom 0.4s ease;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+}
+
+/* LEFT SECTION */
+.leftSection {
+  flex: 1.1;
+  background: linear-gradient(135deg, #0055ff, #00c2ff);
+  padding: 35px;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.leftSection::-webkit-scrollbar {
+  width: 6px;
+}
+
+.leftSection::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+/* Headings */
+.mainHeading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subText {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Features */
+.features {
+  margin-top: 25px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+  animation: slideIn 0.6s ease;
+}
+
+.featureItem i {
+  margin-right: 10px;
+  color: #00ff8f;
+  font-size: 20px;
+}
+
+/* Companies */
+.companies h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+}
+
+.companyLogo {
+  width: 100%;
+  height: 55px;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.companyLogo:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT SECTION */
+.rightSection {
+  flex: 1;
+  padding: 35px;
+  position: relative;
+  background: #ffffff;
+}
+
+.scrollArea {
+  overflow-y: auto;
+}
+
+.scrollArea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff4b4b;
+  border: none;
+  color: white;
+  font-size: 22px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeButton:hover {
+  background: #e00000;
+}
+
+/* Form */
+.formHeading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.formSubText {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #0055ff;
+}
+
+.formGroup label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: white;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Phone Input */
+.phoneInput {
+  display: flex;
+  gap: 10px;
+}
+
+.phoneInput select {
+  width: 85px;
+}
+
+/* Submit Button */
+.submitcontactbutton {
+  width: 100%;
+  padding: 14px;
+  background: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.submitcontactbutton:hover {
+  background: #003ac7;
+}
+
+/* Expert Contact */
+.expertContact {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 12px;
+}
+
+.expertContact img {
+  width: 60px;
+}
+
+.expertInfo p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Bottom Cancel Button */
+.bottomCancel {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #ddd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottomCancel:hover {
+  background: #bfbfbf;
+}
+
+/* Animations */
+@keyframes popupZoom {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

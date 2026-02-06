@@ -1,0 +1,39 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffice</title>
+    <style>
+      /* Simple styles for logo and title */
+      .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background-color: #f8f8f8;
+      }
+      .header-logo img {
+        height: 50px;
+      }
+      .header-logo h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Static Logo and Title -->
+    <div class="header-logo">
+      <img src="/src/assets/images/coffice_logo.svg" alt="Coffice Logo" />
+      <h1>Coffice</h1>
+    </div>
+
+    <!-- React App Root -->
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+.footer {
+  color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #101e5ae9;
+    border-top: 1px solid #e9ecef;
+     /* Ensure it's above other content */
+}
+  
+  .logoSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .logoSection img {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .tagline {
+    font-size: 14px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .socialIcon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .footerColumn h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks, .contactInfo {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerLinks li, .contactInfo li {
+    margin-bottom: 8px;
+  }
+  
+  .footerLinks a, .contactInfo a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contactInfo img {
+    margin-right: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      align-items: center; /* Center-align content */
+      text-align: center; /* Center-align text */
+    }
+  
+    .logoSection {
+      align-items: center; /* Center-align logo and tagline */
+    }
+  
+    .footerColumn {
+      align-items: center; /* Center-align column content */
+    }
+  
+    .socialLinks {
+      justify-content: center; /* Center-align social icons */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px; /* Reduce padding for very small screens */
+    }
+  
+    .footerColumn h2 {
+      font-size: 16px; /* Reduce heading size */
+    }
+  
+    .footerLinks li, .contactInfo li {
+      font-size: 14px; /* Reduce font size for links and contact info */
+    }
+  }

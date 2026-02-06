@@ -1,0 +1,132 @@
+.benefitsSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 40px;
+  background-color: #e3d3e6e1;
+}
+
+.benefitsContent {
+  flex: 1;
+  text-align: left;
+  max-width: 45%;
+}
+
+.label {
+  color: #2f3236;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #1e293b;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Benefit Item */
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Wrapper controls movement */
+.iconWrapper {
+  transition: transform 0.4s ease;
+}
+
+/* Icon styling */
+.benefitIcon {
+  width: 85px;
+  height: 85px;
+  padding: 12px;
+  background: white;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover movement */
+.benefitItem:hover .iconWrapper {
+  transform: translateY(-12px) translateX(6px);
+}
+
+.benefitItem:hover .benefitIcon {
+  transform: rotate(6deg) scale(1.05);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.2);
+}
+
+.benefitLabel {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Image Section */
+.imageSection {
+  flex: 1;
+  width: 48%;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background: #6d4f80 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2f184b !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefitsSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .benefitsContent {
+    max-width: 100%;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageSection {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .imageSection img {
+    height: 260px;
+  }
+}

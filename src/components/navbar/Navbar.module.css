@@ -1,0 +1,111 @@
+/* Main Navbar */
+.navContainer {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    padding: 14px 0;
+}
+
+.navInner {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Desktop Nav Links */
+.navLinks {
+    display: flex;
+    gap: 25px;
+}
+
+.navLink {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+.navLink:hover {
+    color: #1e3a8a;
+}
+
+/* Desktop Book Now */
+.bookNowBtn {
+    background: #1e3a8a;
+    padding: 10px 22px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.bookNowBtn:hover {
+    background: #142a61;
+}
+
+/* Mobile Menu Button */
+.mobileMenuBtn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Dropdown Menu */
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    gap: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mobileMenu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Mobile Book Button */
+.mobileBookBtn {
+    margin-top: 10px;
+    padding: 12px;
+    background: #1e3a8a;
+    color: white !important;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Responsive (Mobile View) */
+@media (max-width: 768px) {
+    .navLinks,
+    .bookNowBtn {
+        display: none;
+    }
+
+    .mobileMenuBtn {
+        display: block;
+        color: #1e3a8a;
+    }
+
+    .mobileMenu {
+        display: flex;
+    }
+}

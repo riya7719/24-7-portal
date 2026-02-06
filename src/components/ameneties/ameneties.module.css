@@ -1,0 +1,149 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.amenitiesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.amenitiesHeader h1 {
+    font-size: 1.6rem;
+    
+    color: #333;
+    font-weight: 600;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+.tab {
+    border: none;
+    background-color: transparent;
+    color: #1d1d1d;
+    font-size: 1.8rem;
+    font-weight: 550;
+    padding: 10px 0;
+    position: relative;
+
+}
+
+.tab.active {
+    color: #1e3a8a;
+    font-weight: bold;
+
+}
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1e3a8a;
+}
+
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.imageContainer {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.amentiesfeatures {
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.amentiesfeature h2 {
+    font-size: 1.4rem;
+    color: #15191f;
+    font-weight: bold;
+    margin-bottom: -10px; /* Reduce space below the header */
+}
+
+.amentiesfeature p {
+    color: #232425;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    margin-bottom: -10px; /* Add a smaller margin above the paragraph */
+}
+
+
+.bookButton {
+    margin-top: 20px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookButton:hover {
+    background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tab {
+        font-size: 16px;
+    }
+
+    .amentiesfeatures {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .amentiesfeature h2 {
+        font-size: 16px;
+    }
+
+    .amentiesfeature p {
+        font-size: 14px;
+    }
+
+    .bookButton {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+

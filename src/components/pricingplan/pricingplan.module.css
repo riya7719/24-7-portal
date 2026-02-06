@@ -1,0 +1,346 @@
+/* ================= PAGE CONTAINER ================= */
+.container {
+  padding: 60px 20px;
+  background: #f8f9fc;
+  text-align: center;
+}
+
+/* ================= TITLE ================= */
+.mainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1e293b;
+}
+
+.mainTitle img {
+  width: 36px;
+}
+
+/* ================= PRICING CARDS ================= */
+.pricingCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.pricingCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px);
+}
+
+.amount {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 22px;
+}
+
+.featured {
+  border: 2px solid #6d28d9;
+}
+
+/* ================= BUTTON ================= */
+.getStarted {
+  background: #6d28d9;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.disabledBtn {
+  background: #9ca3af !important;
+  cursor: not-allowed;
+}
+
+/* ================= QR OVERLAY ================= */
+.qrOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* ================= QR POPUP ================= */
+.qrPopup {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 95%;
+  max-width: 420px;
+  padding: 32px 24px 28px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= CLOSE BUTTON (FIXED) ================= */
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10000; /* IMPORTANT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn:hover {
+  background: #374151;
+}
+
+/* ================= QR IMAGE ================= */
+.qrImg {
+  width: 220px;
+  height: 220px;
+  margin: 16px auto;
+  display: block;
+}
+
+/* ================= UPLOAD ================= */
+.uploadBox {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.uploadBox label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.uploadBox input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.successText {
+  margin-top: 6px;
+  color: #16a34a;
+  font-size: 0.9rem;
+}
+
+/* ================= TERMS ================= */
+.termsBox {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.termsBox h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.termsBox li {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+/* ================= NOTE ================= */
+.note {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 480px) {
+  .qrPopup {
+    padding: 26px 18px;
+  }
+
+  .qrImg {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* ===== Overlay ===== */
+.qrOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* ===== Popup Container ===== */
+.qrPopup {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  border-radius: 16px;
+  position: relative;
+  overflow-y: auto;
+  padding: 22px 18px 26px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Close Button (FIXED & VISIBLE) ===== */
+.closeBtn {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.closeBtn:hover {
+  background: #e2e8f0;
+}
+
+/* ===== Title ===== */
+.qrPopup h2 {
+  text-align: center;
+  margin: 10px 0 6px;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.qrPopup p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* ===== QR Image ===== */
+.qrImg {
+  width: 240px;
+  max-width: 100%;
+  display: block;
+  margin: 18px auto 10px;
+}
+
+/* ===== Upload Section ===== */
+.uploadBox {
+  margin-top: 20px;
+}
+
+.uploadBox label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.uploadBox span {
+  color: red;
+}
+
+.uploadBox input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  background: #ffffff;
+}
+
+/* ===== Success Text ===== */
+.successText {
+  color: #16a34a;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+/* ===== Terms ===== */
+.termsBox {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 18px;
+}
+
+.termsBox h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.termsBox ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.termsBox li {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+/* ===== Button ===== */
+.getStarted {
+  width: 100%;
+  margin-top: 20px;
+  background: #6d28d9;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.getStarted:hover {
+  background: #5b21b6;
+}
+
+.disabledBtn {
+  background: #94a3b8 !important;
+  cursor: not-allowed;
+}
+
+/* ===== Note ===== */
+.note {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 10px;
+}

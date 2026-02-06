@@ -1,0 +1,294 @@
+/* ================= PAGE LAYOUT ================= */
+.seatingfeaturecontainer {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+}
+
+/* ================= MAIN CARD ================= */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+.header {
+  padding: 30px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.ratingLocation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 12px 0 18px;
+}
+
+.rating {
+  background: #0b0f19;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.trust {
+  color: #1a9c58;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ================= PRICE ================= */
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price span {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.price h2 {
+  font-size: 1.6rem;
+  color: #111;
+}
+
+/* ================= IMAGE GRID ================= */
+.imageGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  padding: 0 30px 30px;
+}
+
+.mainImage {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.peopleChoice {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f8c308;
+  color: #111;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.gridImages img {
+  width: 100%;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+/* ================= SEATING PLANS ================= */
+.awifscontainer {
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* Seating Card */
+.seatingPlan,
+.privateCabin {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.seatingPlan img,
+.privateCabin img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.planDetails h2,
+.privateCabin h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.planDetails p,
+.privateCabin p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 6px 0 12px;
+}
+
+.priceSection,
+.privateCabin .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+/* ================= BUTTON ================= */
+.priceSection button,
+.privateCabin button,
+.enquiryForm button {
+  background: #f8c308;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.priceSection button:hover,
+.privateCabin button:hover,
+.enquiryForm button:hover {
+  background: #eab700;
+  transform: scale(1.05);
+}
+
+/* ================= WHY BOOK ================= */
+.whyBook {
+  margin-top: 40px;
+}
+
+.whyBook h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.featuresGrid div {
+  background: #fff;
+  padding: 15px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.featuresGrid img {
+  width: 22px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+}
+
+.enquiryForm {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.enquiryForm h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* ================= EXPERT ================= */
+.expertContact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+  font-size: 0.85rem;
+}
+
+.expertContact img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* ================= TRUSTED COMPANIES ================= */
+.trustedCompanies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.trustedCompanies img {
+  width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .seatingfeaturecontainer {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    top: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .seatingPlan,
+  .privateCabin {
+    flex-direction: column;
+  }
+
+  .seatingPlan img,
+  .privateCabin img {
+    width: 100%;
+    height: 200px;
+  }
+}
