@@ -91,6 +91,27 @@
    
     
   }
+
+  /*hover style to logos*/
+  /* Subtle hover for benefit items */
+.benefitItem {
+  transition: transform 0.25s ease;
+}
+
+.benefitItem:hover {
+  transform: translateY(-3px);
+}
+
+/* Subtle icon hover */
+.benefitIcon {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.benefitItem:hover .benefitIcon {
+  transform: scale(1.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.18);
+}
+
   
   /* Responsive styles */
   @media (max-width: 768px) {

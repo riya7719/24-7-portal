@@ -17,11 +17,10 @@ const WorkDesked = () => {
                           Contact Now
                         </a>
 
-                        <span className={styles.orText}>OR</span>
+                       
 
-                        <a href="tel:+919529730330" className={styles.phoneNumber}>
-                          +91 9529730330
-                        </a>
+                        
+                        
                     </div>
                 </div>
 

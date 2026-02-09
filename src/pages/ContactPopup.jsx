@@ -175,23 +175,38 @@ import styles from "./contactpopup.module.css";
 import { BsCheckCircleFill } from "react-icons/bs";
 import connectcontact from "../assets/images/connectcontact.png";
 import emailjs from "@emailjs/browser";
+// ✅ BRAND LOGOS (LOCAL)
+import amazon from "../assets/brands/amazon.png";
+import apple from "../assets/brands/apple.jpg";
+import google from "../assets/brands/google.jpg";
+import meta from "../assets/brands/meta.png";
+import spotify from "../assets/brands/spotify.jpg";
+import razorpay from "../assets/brands/razorpay.png";
+import kotak from "../assets/brands/kotak.png";
+import inox from "../assets/brands/inox.jpg";
+import classplus from "../assets/brands/classplus.png";
+import creatable from "../assets/brands/creatable.png";
+import doubtnut from "../assets/brands/doubtnut.png";
+import purple from "../assets/brands/purple.png";
+import hb from "../assets/brands/hb.png";
+
 
 const brandLogos = [
-  "https://upload.wikimedia.org/wikipedia/en/6/6d/Inox_Movies_Logo.png",
-  "https://1000logos.net/wp-content/uploads/2021/05/Kotak-Mahindra-Bank-logo.png",
-  "https://cdn.razorpay.com/logo.png",
-  "https://seeklogo.com/images/D/doubtnut-logo-287C7E4F76-seeklogo.com.png",
-  "https://cdn.worldvectorlogo.com/logos/creatable.svg",
-  "https://assets-global.website-files.com/5e9c0f540b0183e23861a4ba/62eda7c2fab74a0e112a88bf_OG%20Image.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/4/40/Purple_Logo.png",
-  "https://classplusapp.com/wp-content/uploads/2023/01/Classplus-logo.png",
-  "https://hb.bizmudra.com/assets/images/logo.png",
-  "https://download.logo.wine/logo/Google/Google-Logo.wine.png",
-  "https://1000logos.net/wp-content/uploads/2021/04/Amazon-logo.png",
-  "https://upload.wikimedia.org/wikipedia/commons/5/51/Meta_Platforms_Inc._logo.svg",
-  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png",
-  "https://upload.wikimedia.org/wikipedia/commons/0/08/Spotify_logo_vertical_black.jpg",
+  inox,
+  kotak,
+  razorpay,
+  doubtnut,
+  creatable,
+  purple,
+  classplus,
+  hb,
+  google,
+  amazon,
+  meta,
+  apple,
+  spotify,
 ];
+
 
 const ContactPopup = ({ setShowPopup }) => {
   const [loading, setLoading] = useState(false);
@@ -267,7 +282,13 @@ const ContactPopup = ({ setShowPopup }) => {
             <h3>Trusted by Leading Brands</h3>
             <div className={styles.companyGrid}>
               {brandLogos.map((logo, index) => (
-                <img key={index} src={logo} alt="company" />
+                <img
+  key={index}
+  src={logo}
+  alt="company"
+  className={styles.companyLogo}
+/>
+
               ))}
             </div>
           </div>

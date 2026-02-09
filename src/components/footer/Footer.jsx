@@ -27,12 +27,18 @@ const Footer = () => {
       <div className={styles.footerColumn}>
         <h2>Collaboration</h2>
         <ul className={styles.contactInfo}>
-          <li>
-            <img src={contact} alt="Phone" /> + 91-91797 48353
-          </li>
-          <li>
-            <img src={mail} alt="Email" /> coffice.contact.pune@gmail.com
-          </li>
+         <li>
+  <img src={contact} alt="Phone" />
+  <a href="tel:+919529730330">+91 9529730330</a>
+</li>
+
+<li>
+  <img src={mail} alt="Email" />
+  <a href="mailto:patiltejashri064@gmail.com">
+  patiltejashri064@gmail.com
+</a>
+</li>
+
           <li>
             <img src={web} alt="Website" /> coffice24x7.in
           </li>

@@ -85,8 +85,8 @@
 
 .companyGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 12px;
 }
 
 .companyLogo {
@@ -98,6 +98,9 @@
   border-radius: 8px;
   transition: 0.3s;
 }
+
+
+
 
 .companyLogo:hover {
   transform: scale(1.05);
